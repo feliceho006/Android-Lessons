@@ -1,4 +1,4 @@
-package com.example.myfirstapp;
+package com.example.lesson1;
 
 // Create a new android studio project with Empty Activity
 // Copy the code below
@@ -9,6 +9,10 @@ package com.example.myfirstapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageView;
+
+import java.util.ArrayList;
 
 
 //TODO 1.1 Put in some images in the drawables folder
