@@ -3,4 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="set_exchange_rate">Set Exchange Rate</string>
     <string name="main_activity_name">Convert Currency</string>
+    <string name="warning_empty">Fill it in with a value</string>
+    <string name="openMap">Open Map</string>
+    <string name="default_location">Singapore</string>
 </resources>
