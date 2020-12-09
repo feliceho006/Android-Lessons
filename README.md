@@ -15,3 +15,31 @@ The strategy with this app:
 - Store all images in the res/drawables folder. Put the Image IDs in an ArrayList 
 - When the Button is clicked, retrieve the image ID from the ArrayList in sequence. 
 - Use the image ID to retrieve the image and place it in the ImageView widget.
+
+### Android Lesson 2: Exchange Rate App
+Learning outcomes:
+- Describe the static factory method and builder design pattern in Java 
+- Use the BigDecimal class for financial calculations 
+- From an EditText widget, extract data and specify input settings 
+- Use the logcat to display messages to track the behaviour of an app 
+- Describe what a Toast is and write code to display toasts 
+- Explain what is an Explicit Intent and write code to implement it 
+- Explain what is an Implicit Intent and write code to implement it 
+- Modify the android manifest to change the app name and to specify a parent activity 
+- Describe the Android activity life cycle 
+- Describe and modify the code needed for an Options Menu 
+- Save app data using the SharedPreferences class 
+- Explain the purpose of Unit Testing and write code for unit tests using the JUnit framework
+
+The strategy with this app:
+- Part 1:
+  - You will write code so that the exchange rate will be calculated using the default exchange rate of 2.95. 
+    - The user will enter the value in the EditText widget. 
+    - The code will retrieve the user input, perform the conversion and display the result. 
+    - If the user input is blank and the button is clicked, then you would display a toast and a logcat message
+- Part 2:
+  - You will write code to allow the user to enter the exchange rate information in a different activity called SubActivity.
+    - Specify that your app has more than one activity in the Android manifest 
+    - Bring the user from MainActivity to SubActivity using an Explicit Intent 
+    - When the user keys in the exchange rate, write code to handle bad or unintended inputs. My suggested implementation is to use Exceptions to recall this Java concept. 
+    - Bring the user from SubActivity back to MainActivity and pass the data back
