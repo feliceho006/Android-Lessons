@@ -61,3 +61,17 @@ The strategy with this app:
 - (onProgressUpdate, doInBackground) Call publishProgress, write code to update textViewTitle with the image URL
 - (doInBackground)Call Utils.getBitmap using the URL to get the bitmap
 - (onPostExecute)Assign the Bitmap downloaded to imageView. The bitmap may be null.
+
+### Android Lesson 4: Pokédex
+Learning outcomes:
+- Calling intents using startActivityForResult() in an android app
+- Implement a RecyclerView in an Android app
+- Describe the use of static nested classes
+- Describe Delegation and the Strategy Design Pattern
+- Describe the Adapter Design Pattern
+
+The strategy with this app:
+- Recyclerview
+  - Instantiate CharaAdapter
+  - Assign the CharaAdapter instance to the RecyclerView widget
+  - Assign a LayoutManager instance to the RecyclerView widget. You can choose between LinearLayoutManager() and GridLayoutManager()
