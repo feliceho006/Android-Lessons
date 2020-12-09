@@ -43,3 +43,21 @@ The strategy with this app:
     - Bring the user from MainActivity to SubActivity using an Explicit Intent 
     - When the user keys in the exchange rate, write code to handle bad or unintended inputs. My suggested implementation is to use Exceptions to recall this Java concept. 
     - Bring the user from SubActivity back to MainActivity and pass the data back
+
+### Android Lesson 3: Comic App
+Learning outcomes:
+- Describe how the AsyncTasks class is used
+- Query an API using the AsyncTasks class
+- State the limitations of the AsyncTasks class
+- Modify the android Manifest to set permissions and fix the orientation
+- Download JSON data given a URL of an API call
+- Parse JSON data using the JSONObject class
+- Download an Image file given a URL
+- Display the information in the UI
+
+The strategy with this app:
+- Make GetComic extend AsyncTask<String, String, Bitmap> (note the different types and ask yourself why … )
+- (doInBackground) Call Utils.getImageURLFromXkcdApi to get the image URL from comicNo
+- (onProgressUpdate, doInBackground) Call publishProgress, write code to update textViewTitle with the image URL
+- (doInBackground)Call Utils.getBitmap using the URL to get the bitmap
+- (onPostExecute)Assign the Bitmap downloaded to imageView. The bitmap may be null.
